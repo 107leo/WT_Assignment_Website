@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+<style type="text/css">
+
+body{
+  transform:translate(-25%,10%);
+  margin-top:250px;
+  background-image:url(4.jpg);
+  font-size: 20px;
+  line-height: 50px;
+  color:#fff;
+  font-family: Century Gothic;
+}
+		
+input{
+  padding: 5px 8px;
+  margin: 8px 0;
+}
+
+input[type=submit]{
+ 
+ 
+  padding: 5px 20px;
+  margin: 10px 0;
+}
+
+
+	</style>
+</head>
+<body>
+<script>
+function msg() {
+         if( document.getElementById("name").value == "" )
+        	 alert( "Please Provide Your Username" );
+         	
+         else if( document.getElementById("pass").value == "" ) 
+         	alert( "Please Provide Password" );
+        	
+        }
+
+	 else if( document.getElementById("no").value == "" ) 
+         	alert( "Please Provide Phone No" );
+        	
+        }
+	
+        	
+        }
+</script>
+<div align="center">
+<form name="loginForm" method="post" action="valserv">
+
+Name: <input type="text" name="username" id="name"/> <br/>
+Email: <input type="email" name="email" id="mail"/> <br/>
+Phone.no: <input type="text" name="phoneno" id="no"/> <br/>
+Password: <input type="password" name="password" id="pass"/> <br/>
+<input type="submit" value="Login" onclick="msg()"/>
+
+</form>
+</div>
+</body>
+</html>
